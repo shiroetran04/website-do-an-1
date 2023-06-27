@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitea Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script> 
+    $(document).ready(function () {
+  $('.read-more').click(function (e) {
+      e.preventDefault();
+      var contentDiv = $(this).prev('.content');
+      contentDiv.toggle();
+      if (contentDiv.is(':visible')) {
+          $(this).text('Thu gọn');
+      } else {
+          $(this).text('Hiển thị thêm');
+      }
+  });
+});
+    </script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Trang Chủ</a>
+            <a href="#about">About</a>
+            <a href="#menu">Đồ uống</a>
+            <a href="#products">Best Seller</a>
+            <a href="#review">Đánh Giá</a>
+            <a href="#contact">Liên Hệ</a>
+    
+        </nav>
+
+        <div class="icons">
+            <div style="display:none" class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <a href="./Login.html"> <div class="fa-solid fa-user" id="user-btn"></div>
+            </a>
+           
+        </div>
+
+        <div class="cart-items-container">
+            <a href="#" class="btn">Mua Ngay</a>
+        </div>
+       
+
+    </header>
+    <section class="home" id="home">
+    </section>
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>Giới </span> Thiệu  </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/home.png" alt="" width="100" height="550">
+            </div>
+
+            <div class="content">
+                <h3>MiTea</h3>
+                <p>MiTea là MilkTea sau khi mở rộng đồ uống theo nhu cầu của khách hàng. <br>Là cách chơi chữ với hai nghĩa "Milk Tea" và "My Tea".</p>
+                <p style="display:none">"Còn nhỏ mê sữa, trưởng thành thích bia,<br> về già thích trà, vấp ngã thích cà phê."</p>
+                <button class="btnp readmore">Khẩu hiệu</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> Đồ uống <span>của MiteA</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/milo.webp" alt="">
+                <h3>Milo Dầm</h3>
+                <div class="price">27.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/bacsiu1.jpg" alt="">
+                <h3>Bạc xỉu</h3>
+                <div class="price">17.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/cafeden.jpg" alt="">
+                <h3>Cafe đen Sài Gòn</h3>
+                <div class="price">15.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/cafemuoi.jpg" alt="">
+                <h3>Cafe muối </h3>
+                <div class="price">20.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/trachanh1.jpg" alt="">
+                <h3>Trà chanh soda </h3>
+                <div class="price">25.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/tradaocam1.jpeg" alt="">
+                <h3>Trà đào cam </h3>
+                <div class="price">25.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/travai.jpg" alt="">
+                <h3>Trà Vải</h3>
+                <div class="price">20.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/trachanhday.jpg" alt="">
+                <h3>Trà chanh dây</h3>
+                <div class="price">25.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/suachuadau.png" alt="">
+                <h3>Sữa Chua Dâu Tây</h3>
+                <div class="price">25.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="box">
+                <img src="images/nuocepdua.png" alt="">
+                <h3>Nước ép dưa hấu</h3>
+                <div class="price">30.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/nuocepbuoi.png" alt="">
+                <h3>Nước ép bưởi</h3>
+                <div class="price">35.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/nuocepthom.jpg" alt="">
+                <h3>Nước ép thơm</h3>
+                <div class="price">25.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/trasuathaixanh.jpg" alt="">
+                <h3>Trà sữa thái xanh</h3>
+                <div class="price">23.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/trasua.png" alt="">
+                <h3>Trà sữa truyền thống</h3>
+                <div class="price">20.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/kemtrung.jpg" alt="">
+                <h3>Trà sữa kem trứng</h3>
+                <div class="price">25.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <div class="box">
+                <img src="images/suatuoi.jpg" alt="">
+                <h3>Sữa tươi trân châu đường đen</h3>
+                <div class="price">23.000VNĐ</div>
+                <button class="btn">Thêm Vào Giỏ Hàng</button>
+            </div>
+            <!-- btn readmore  -->
+
+              <!-- Nội dung bổ sung -->
+            
+        </div>
+        <div>
+            <div class="content" style="display: none" >
+                <section class="mn"> 
+                    <div class="box-container bct ">
+                        <div class="box b1">
+                            <img src="images/tradao.png" alt="">
+                            <h3>Trà Đào</h3>
+                            <div class="price">25.000VNĐ</div>
+                            <button class="btn">Thêm Vào Giỏ Hàng</button>
+                        </div>
+            
+                        <div class="box b1">
+                            <img src="images/traque.png" alt="">
+                            <h3>Trà quế soda </h3>
+                            <div class="price">25.000VNĐ</div>
+                            <button class="btn">Thêm Vào Giỏ Hàng</button>
+                        </div>
+            
+                        <div class="box b1">
+                            <img src="images/caramel.png" alt="">
+                            <h3>Trà sữa caramel</h3>
+                            <div class="price">30.000VNĐ</div>
+                            <button class="btn">Thêm Vào Giỏ Hàng</button>
+                        </div>
+            
+                        <div class="box b1">
+                            <img src="images/trasoda.png" alt="">
+                            <h3>Trà chanh </h3>
+                            <div class="price">25.000VNĐ</div>
+                            <button class="btn">Thêm Vào Giỏ Hàng</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="read-more">Hiển thị thêm</button>
+        </div>
+    </section>
+    
+    <section class="products" id="products">
+
+        <h1 class="heading"> Best<span> Seller</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons muaa">
+                    <a href="#" class="fas fa-shopping-cart them" onclick="addToCart(event)"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="images/trasuaolong.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Trà sữa ô Long trân châu đường đen</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">25.000VNĐ</div>
+                </div>
+            </div>
+            
+            
+            
+
+            <div class="box">
+                <div class="icons muaa">
+                    <a href="#" class="fas fa-shopping-cart them" onclick="addToCart(event)"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="images/oihong.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Trà ổi hồng nha đam</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">20.000VNĐ</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> Khách Hàng <span>Đánh Giá</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p> Đồ uống ngon </p>
+                <h3>Nhật Phương</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p> Quán ruột của mình giờ mở bán online nên phải ủng hộ thuiii <3333 </p>
+                <h3>Thu Hiền</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Địa chỉ</span> Của Quán</h1>
+        <div id="map" style="width:500px;height:500px;">
+            <iframe
+                src="https:////www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245389.60328761404!2d107.93164621640625!3d16.0544563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0x1df0cb4b86727e06!2zxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1676729045644!5m2!1svi!2s"
+                 width="1400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row">
+
+            <form action="">
+                <h3>Liên Lạc</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Tên">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Số Điện Thoại">
+                </div>
+                <input type="submit" value="Liên Hệ Ngay" class="btn" id="lienhe">
+            </form>
+
+        </div>
+
+    </section>
+
+        </div>
+
+    </section>
+     <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100094112949709" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/Line271004" class="fab fa-twitter"></a>
+            <a href="https://instagram.com/mi_tea00?igshid=NGExMmI2YTkyZg==" class="fab fa-instagram"></a>
+        </div>
+        </section>
+
+        <script src="js/script.js"></script>
+        <script src="js/cart.js"></script>
+
+        
+</body>
+
+</html>
